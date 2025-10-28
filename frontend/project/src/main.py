@@ -26,7 +26,7 @@ logging.basicConfig(
 # API_KEY = st.secrets.get("API_KEY", os.getenv("API_KEY"))
 # FIX: Removed the insecure default 'http' URL. The application will now require an explicit
 # BACKEND_API_URL configuration, enhancing security by preventing accidental insecure deployments.
-BACKEND_API_URL = os.getenv("BACKEND_API_URL")
+BACKEND_API_URL = "http://127.0.0.1:5000"
 
 # --- Constants for Session State and Widget Keys ---
 # FIX: Defined constants for session state and widget keys to prevent typos and improve code maintainability.
